@@ -21,6 +21,7 @@ class ActionSchema(BaseModel):
     # the action arguments
     args: Dict
 
+    message_id: Optional[int] = Field(None)
 
 class MessageSchema(ActionSchema):
     """
